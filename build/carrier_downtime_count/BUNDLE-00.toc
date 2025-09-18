@@ -1,3 +1,0 @@
-([('carrier_downtime_count',
-   '/Users/hheisego/Documents/carrier_downtime_count/dist/carrier_downtime_count',
-   'EXECUTABLE')],)

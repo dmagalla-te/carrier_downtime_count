@@ -5,8 +5,8 @@ a = Analysis(
     ['main_endpoint.py'],
     pathex=[],
     binaries=[],
-    datas=[('config', 'config')],
-    hiddenimports=['httpx', 'pydantic', 'pydantic_settings', 'asyncio', 'csv', 're', 'datetime', 'time'],
+    datas=[],
+    hiddenimports=['dotenv', 'httpx', 'pydantic', 'pydantic_settings'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -29,16 +29,10 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=False,
+    console=True,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-)
-app = BUNDLE(
-    exe,
-    name='carrier_downtime_count.app',
-    icon=None,
-    bundle_identifier=None,
 )
