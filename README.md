@@ -6,4 +6,4 @@ pyinstaller --onefile --noconsole --name "carrier_downtime_count" --distpath "./
 
 para mac
 
-pyinstaller --onefile --noconsole --name "carrier_downtime_count" --distpath "./dist" --workpath "./build" --specpath "." --add-data "config:config" --hidden-import=httpx --hidden-import=pydantic --hidden-import=asyncio --hidden-import=csv --hidden-import=re --hidden-import=datetime --hidden-import=time --clean main_endpoint.py
+pyinstaller --onefile --noconsole --name "carrier_downtime_count" --distpath "./dist" --workpath "./build" --specpath "." --add-data "config:config" --hidden-import=httpx --hidden-import=pydantic --hidden-import=pydantic_settings --hidden-import=asyncio --hidden-import=csv --hidden-import=re --hidden-import=datetime --hidden-import=time --clean main_endpoint.py
